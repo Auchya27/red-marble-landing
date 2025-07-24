@@ -1,13 +1,20 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Services from './components/Services';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <ContactForm />
+      <Footer />
+    </>
   );
 }
 export default App;

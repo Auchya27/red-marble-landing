@@ -4,6 +4,7 @@ import hero from "../assets/hero-2.svg";
 const Hero = () => {
   return (
     <section
+      id="hero"
       className={clsx(
         "w-full min-h-screen flex items-center justify-center",
         "bg-white text-gray-900"

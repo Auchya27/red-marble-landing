@@ -18,7 +18,7 @@ const Navbar = () => {
     <header
       className={clsx(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-white/80 backdrop-blur-md shadow-sm"
       )}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -28,11 +28,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="cursor-pointer hidden md:flex space-x-8 text-gray-700 font-medium text-sm">
-          <li className="hover:text-red-600 transition">Home</li>
-          <li className="hover:text-red-600 transition">About</li>
-          <li className="hover:text-red-600 transition">Services</li>
-          <li className="hover:text-red-600 transition">Contact</li>
+        <ul className="hidden md:flex space-x-8 text-gray-700 font-medium text-sm">
+          <li className="hover:text-red-600 transition"><a href="#hero">Home</a></li>
+          <li className="hover:text-red-600 transition"><a href="#about">About</a></li>
+          <li className="hover:text-red-600 transition"><a href="#services">Services</a></li>
+          <li className="hover:text-red-600 transition"><a href="#contact">Contact</a></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -48,10 +48,10 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden px-6 pb-4">
           <ul className="cursor-pointer space-y-4 text-gray-700 font-medium text-base">
-            <li className="hover:text-red-600 transition ">Home</li>
-            <li className="hover:text-red-600 transition">About</li>
-            <li className="hover:text-red-600 transition">Services</li>
-            <li className="hover:text-red-600 transition">Contact</li>
+          <li className="hover:text-red-600 transition"><a href="#hero">Home</a></li>
+          <li className="hover:text-red-600 transition"><a href="#about">About</a></li>
+          <li className="hover:text-red-600 transition"><a href="#services">Services</a></li>
+          <li className="hover:text-red-600 transition"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       )}
